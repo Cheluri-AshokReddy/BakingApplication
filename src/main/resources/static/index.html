@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <h1>Welcome to the Banking System</h1>
+</header>
+
+<!-- Main Menu Section -->
+<section id="main-menu">
+    <h2>Please choose an option:</h2>
+    <form id="main-menu-form">
+        <button type="button" onclick="showRegistrationForm()">Register</button>
+        <button type="button" onclick="showLoginForm()">Login</button>
+        <button type="button" onclick="exitSystem()">Exit</button>
+    </form>
+</section>
+
+<!-- Registration Form Section -->
+<section id="registration-form" style="display:none;">
+    <h2>Register a new account</h2>
+    <form id="register-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+    </form>
+    <button type="button" onclick="backToMainMenu()">Back</button>
+</section>
+
+<!-- Login Form Section -->
+<section id="login-form" style="display:none;">
+    <h2>Login to your account</h2>
+    <form id="login">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="login-email" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required>
+
+        <button type="submit">Login</button>
+    </form>
+    <button type="button" onclick="backToMainMenu()">Back</button>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Banking System</p>
+</footer>
+
+<script src="app.js"></script> <!-- Link to the JS file -->
+</body>
+</html>

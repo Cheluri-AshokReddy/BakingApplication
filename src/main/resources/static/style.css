@@ -1,0 +1,122 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Style for the container of the buttons */
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Button styling */
+#main-menu button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+#main-menu button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Styling for forms */
+form {
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Back button */
+button[type="button"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/background.jpg'); /* Path from the static folder */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Arrange content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
